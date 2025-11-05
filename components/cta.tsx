@@ -5,51 +5,6 @@ import Image from 'next/image';
 import Stripes from '@/public/images/stripes-dark.svg';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [error, setError] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showToast, setShowToast] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setError('');
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!formData.name || !formData.email || !formData.message) {
-      setError('Please fill in all fields.');
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      const json = await res.json();
-
-      if (res.ok) {
-        setShowToast(true);
-        setFormData({ name: '', email: '', message: '' });
-        setTimeout(() => {
-          setShowToast(false);
-          setIsSubmitting(false);
-        }, 3000);
-      } else {
-        setError(json.error || 'Submission failed.');
-        setIsSubmitting(false);
-      }
-    } catch (err: any) {
-      setError(err?.message || 'Network error.');
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-32 mb-32">
@@ -67,7 +22,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Left Info */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-gray-200">Reach Out to Fintec Solutions</h3>
+              <h3 className="text-2xl font-semibold text-gray-200">Reach out to Fintec Solutions</h3>
               <p className="text-lg text-gray-300">We’re here to help you with innovative payment solutions. Connect with us today!</p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
@@ -102,14 +57,21 @@ export default function ContactPage() {
 
             {/* Right Form */}
             <div className="relative">
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form 
+                action="https://formsubmit.co/info@fintec.com.np" 
+                method="POST" 
+                className="space-y-6"
+              >
+                {/* FormSubmit.co configuration */}
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Fintec Solutions" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_captcha" value="true" />
+                
                 <div>
                   <label className="block text-sm font-medium text-gray-200">Name</label>
                   <input
                     type="text"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     className="mt-1 w-full rounded-md border p-3 bg-gray-800/50 text-gray-200"
                     placeholder="Your Name"
                     required
@@ -120,8 +82,6 @@ export default function ContactPage() {
                   <input
                     type="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     className="mt-1 w-full rounded-md border p-3 bg-gray-800/50 text-gray-200"
                     placeholder="Your Email"
                     required
@@ -131,8 +91,6 @@ export default function ContactPage() {
                   <label className="block text-sm font-medium text-gray-200">Message</label>
                   <textarea
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     rows={5}
                     className="mt-1 w-full rounded-md border p-3 bg-gray-800/50 text-gray-200"
                     placeholder="Your Message"
@@ -140,20 +98,12 @@ export default function ContactPage() {
                   />
                 </div>
 
-                {error && <p className="text-red-400">{error}</p>}
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-blue-500 text-white py-3 rounded-md disabled:opacity-50"
+                  className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition-colors"
                 >
-                  {isSubmitting ? 'Submitting...' : 'Send Message'}
+                  Send Message
                 </button>
-
-                {showToast && (
-                  <div className="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-md">
-                    Form submitted successfully!
-                  </div>
-                )}
               </form>
             </div>
           </div>
