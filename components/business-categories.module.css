@@ -1,0 +1,55 @@
+
+.logoContainer {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.logoItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.logoItem:hover {
+  opacity: 1;
+}
+
+.logoDuplicate {
+  display: flex;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 640px) {
+  .logoContainer {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logoItem {
+    margin: 0 1rem 1rem;
+  }
+  .logoDuplicate {
+    display: none; /* Hide duplicate logos on small screens */
+  }
+}
+@media (max-width: 1400px) {
+  .logoContainer {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logoItem {
+    margin: 0 1rem 1rem;
+  }
+  .logoDuplicate {
+    display: none; /* Hide duplicate logos on small screens */
+  }
+}
