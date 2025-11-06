@@ -83,13 +83,13 @@ export default function NewsSection() {
     },
      {
       id: 6,
-      title: "Fintec Solutions and LankaPay Partner to Enable Visa Digital Payments",
-      desc: "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire Visa digital Payments",
+      title: "Fintec Solutions and LankaPay Partner to Enable VISA Digital Payments",
+      desc: "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire VISA digital Payments",
       date: "10 Oct 2025",
       image: articleImg6,
       tag: "New",
       fullText:
-        "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire weChat digital Payments",
+        "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire VISA digital Payments",
     }
   ];
 

@@ -8,12 +8,16 @@ export default function Footer({ border = false }: { border?: boolean }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Top area: Blocks */}
         <div
-          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]" : ""}`}
+          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${
+            border
+              ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]"
+              : ""
+          }`}
         >
           {/* 1st block */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
             <div>
-            <Image src={Logo01} alt="Fintec Logo" width={140} height={16} />
+              <Image src={Logo01} alt="Fintec Logo" width={140} height={16} />
             </div>
             <div className="text-sm text-gray-600">
               2025 &copy; Fintec Solutions - All rights reserved
@@ -23,74 +27,28 @@ export default function Footer({ border = false }: { border?: boolean }) {
           {/* 2nd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-3">
             <h3 className="text-sm font-medium">Products & Services</h3>
-
-            <div className="products flex-col">
-              <div className="left">
-                  
-                <ul className="space-y-2 text-sm">
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; QR Payment Acquring Integration
-                </p>
-               
-              </li>
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; Physical & Virtual Card Issuance
-                </p>
-               
-              </li>
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; Scan To Order
-                </p>
-              </li>
-             
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                 &bull; POS Acquring
-                </p>
-               
-              </li>
-              
-              
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; Unified Checkout Payment Integration
-                </p>
-               
-              </li>
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; QR Payment Acquiring
-                </p>
-               
-              </li>
-                <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; AliPay QR Payment Acquiring Solution
-                </p>
-               
-              </li>
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; WeChat Payment Acquiring Solution
-                </p>
-               
-              </li>
-              <li>
-                <p className="text-gray-600 transition hover:text-gray-900">
-                &bull; NPCI QR Payment Acquiring Solution
-                </p>
-               
-              </li>
+            <ul className="space-y-2 text-sm">
+              {[
+                "QR Payment Acquring Integration",
+                "Physical & Virtual Card Issuance",
+                "Scan To Order",
+                "POS Acquring",
+                "Unified Checkout Payment Integration",
+                "QR Payment Acquiring",
+                "AliPay QR Payment Acquiring Solution",
+                "WeChat Payment Acquiring Solution",
+                "NPCI QR Payment Acquiring Solution",
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link
+                    href="#about"
+                    className="text-gray-600 transition hover:text-gray-900"
+                  >
+                    &bull; {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
-              </div>
-              
-            </div>
-
-           
-            
           </div>
 
           {/* 3rd block */}
@@ -100,32 +58,21 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#contact"
+                  href="#about"
                 >
-                  Phone:+977 9801011137
+                  Phone: +977 9801011137
                 </Link>
               </li>
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#contact"
+                  href="mailto:info@fintec.com.np"
                 >
-                  Mail:info@fintec.com.np
+                  Mail: info@fintec.com.np
                 </Link>
-              </li>
-              <li>
-               
-              </li>
-              <li>
-              
-              </li>
-              <li>
-                
               </li>
             </ul>
           </div>
-
-      
 
           {/* 5th block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
@@ -146,15 +93,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 >
                   Who are we?
                 </Link>
-              </li>
-              <li>
-               
-              </li>
-              <li>
-              
-              </li>
-              <li>
-                
               </li>
             </ul>
           </div>

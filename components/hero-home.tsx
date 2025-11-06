@@ -106,7 +106,7 @@ export default function HeroHome() {
               data-aos-delay={150}
             >
               Innovative Solutions <br className="max-lg:hidden" />
-              For Financial Services for the Future
+              For Financial Services of the Future
             </h1>
             <div className="mx-auto max-w-3xl">
               <p

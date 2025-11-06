@@ -75,7 +75,7 @@ export default function FeaturesPlanet() {
               </div>
 
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>Visa's Product</span>
+                <span>VISA'S Product</span>
               </h3>
               <ul className="text-[15px] text-gray-400">
                 <li>&bull; Unified Checkout Payment Integration</li>

@@ -6,6 +6,9 @@ import PlanetTagImg01 from "@/public/images/planet-tag/Lanka.png";
 import PlanetTagImg02 from "@/public/images/planet-tag/Ali.png";
 import PlanetTagImg03 from "@/public/images/planet-tag/Union.png";
 import PlanetTagImg04 from "@/public/images/planet-tag/VISA.png";
+import PlanetTagImg05 from "@/public/images/planet-tag/weChat.png";
+import PlanetTagImg06 from "@/public/images/planet-tag/Discover.png";
+import PlanetTagImg07 from "@/public/images/planet-tag/Npci.png";
 
 export default function Contact() {
   return (
@@ -161,6 +164,27 @@ export default function Contact() {
                      <Image
                       className="absolute bottom-4 left-30 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
                       src={PlanetTagImg04}
+                      width={251}
+                      height={56}
+                      alt="Tag 04"
+                    />
+                    <Image
+                      className="absolute bottom-96 left-30 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
+                      src={PlanetTagImg05}
+                      width={251}
+                      height={56}
+                      alt="Tag 04"
+                    />
+                    <Image
+                      className="absolute bottom-50 left-80 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
+                      src={PlanetTagImg06}
+                      width={251}
+                      height={56}
+                      alt="Tag 04"
+                    />
+                    <Image
+                      className="absolute bottom-50 -left-20 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
+                      src={PlanetTagImg07}
                       width={251}
                       height={56}
                       alt="Tag 04"
