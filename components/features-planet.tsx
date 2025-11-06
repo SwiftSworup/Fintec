@@ -56,8 +56,8 @@ export default function FeaturesPlanet() {
                 <li>&bull; Virtual Card Issuance</li>
                 <li>&bull; Physical Card Issuance</li>
                 <li>&bull; Scan To Order</li>
-                <li>&bull; POS Acquiring</li>
-                <li>&bull; ATM Acquiring</li>
+                <li>&bull; POS Acquiring Solution</li>
+                <li>&bull; ATM Acquiring Solution</li>
               </ul>
               <p className="text-[15px] text-gray-400"></p>
             </article>
@@ -166,8 +166,7 @@ export default function FeaturesPlanet() {
                 <span>Discover</span>
               </h3>
               <ul className="text-[15px] text-gray-400">
-                <li>&bull; Item 1</li>
-                <li>&bull; Item 2</li>
+                <li>&bull; POS Acquring Solution</li>
               </ul>
               <p className="text-[15px] text-gray-400"></p>
             </article>

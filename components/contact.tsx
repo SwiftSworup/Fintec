@@ -45,11 +45,11 @@ export default function Contact() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-               Fintech Solutions is a company specialized in providing customized as 
+               Fintec Solutions is a company specialized in providing customized as 
                well as over-the-counter payment products. We provide turn-key solutions to 
                financial institutions, whether it's bridge gaps or providing middleware 
-               solutions to quickly enable them to process / acquire payment schemes through
-               various innovative payment channels. Our products are certified with various
+               solutions to quickly enable them to process / acquire payments through
+               various innovative products. Our products are certified with various
                 payment schemes such as UnionPay International, Discover, AliPay, NPCI, WeChat, LankaPay and VISA.
               </p>
             </div>

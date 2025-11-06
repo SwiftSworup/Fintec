@@ -8,6 +8,8 @@ import articleImg1 from "@/public/images/news-img.jpg";
 import articleImg2 from "@/public/images/Thumbnail/Lankapay-collab.png";
 import articleImg3 from "@/public/images/WeChat-Banner-2.jpg";
 import articleImg4 from "@/public/images/Thumbnail/india.jpeg"; 
+import articleImg5 from "@/public/images/Thumbnail/Alipay.png";
+import articleImg6 from "@/public/images/Thumbnail/visa.png";
 
 type Article = {
   id: number;
@@ -69,7 +71,26 @@ export default function NewsSection() {
       fullText:
         "The fast-evolving world of fintech, staying ahead means anticipating user needs and integrating cutting-edge features before they become table stakes. While the QPay app—Fintec's flagship digital wallet—has long excelled in UPI-based transfers, bill payments, and merchant solutions, tap and pay (contactless NFC payments) remains one of the most requested enhancements. As of now, this feature isn't integrated, but with India's digital payments market projected to hit $10 trillion by 2026, the time to plan is now. This blog outlines a comprehensive roadmap for bringing tap and pay to QPay, drawing on industry best practices and Fintec's unique position in the ecosystem.",
       videoUrl: "https://www.youtube.com/embed/2gsEDChLDy8"
+    }, {
+      id: 5,
+      title: "Fintec Solutions and LankaPay Partner to Enable AliPay Digital Payments",
+      desc: "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire weChat digital Payments",
+      date: "10 Oct 2025",
+      image: articleImg5,
+      tag: "New",
+      fullText:
+        "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire weChat digital Payments",
     },
+     {
+      id: 6,
+      title: "Fintec Solutions and LankaPay Partner to Enable Visa Digital Payments",
+      desc: "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire Visa digital Payments",
+      date: "10 Oct 2025",
+      image: articleImg6,
+      tag: "New",
+      fullText:
+        "Fintech Solutions and LankaPay signs an agreement to enable LankaPay to Acquire weChat digital Payments",
+    }
   ];
 
   // Close modal when clicking outside

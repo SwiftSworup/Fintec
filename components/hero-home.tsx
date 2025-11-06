@@ -24,54 +24,54 @@ export default function HeroHome() {
               className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
               data-aos="zoom-y-out"
             >
-              <div className="-mx-0.5 flex justify-center -space-x-0">
+              <div className="-mx-0.5 flex justify-center space-x-1">
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={unionPay}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="Union Pay"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={aliPay}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="Ali Pay"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={discover}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="Discover"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={qPay}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="Qpay"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={pakQR}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="Pak QR"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={npci}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="NPCI"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
                   src={smartQR}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   alt="Smart QR"
                 />
                 <Image
@@ -105,8 +105,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Transforming Financial Services <br className="max-lg:hidden" />
-              for the Future
+              Innovative Solutions <br className="max-lg:hidden" />
+              For Financial Services for the Future
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -114,7 +114,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Seamless digital transactions, innovative payment solutions, and secure financial services—all in one platform. Power your business with Fintec.
+                Seamless secure digital transactions, innovative payment solutions, and customized integration-all in one platform. Power your business with Fintec.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -198,7 +198,7 @@ export default function HeroHome() {
     {/* Video section */}
     <div className="relative overflow-hidden rounded-xl">
       <video
-        src="/images/videos/fintec-demo.mp4" // ← change to your video path
+        src="/images/videos/fintec-demo.mp4" 
         autoPlay
         loop
         muted
